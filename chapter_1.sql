@@ -3,11 +3,9 @@
 ------ Installing Postgres App & pgsql4 ------
 ----- Creating a database, table, and etc ----
 ----------------------------------------------
-
-
-
 -- initialize database: analysis --
 CREATE DATABASE analysis;
+
 
 -- creating a table: teachers --
 CREATE TABLE teachers (
@@ -19,6 +17,7 @@ CREATE TABLE teachers (
   salary numeric
 );
 
+
 -- inserting data into the teaches table --
 INSERT INTO teachers (first_name, last_name, school, hire_date, salary)
 VALUES ('Janet', 'Smith', 'F.D. Roosevelt HS', '2011-10-30', 36200),
@@ -29,13 +28,15 @@ VALUES ('Janet', 'Smith', 'F.D. Roosevelt HS', '2011-10-30', 36200),
 ('Kathleen', 'Roush', 'F.D. Roosevelt HS', '2010-10-22', 38500); 
 -- comic about ISO format date: https://xkcd.com/1179/ -- 
 
+
+
+
 -- ################################################################### --
 -- ############################## DIY ################################ --
 -- ################################################################### --
 -- try to create a catalog of all animals at your local zoo. --
 -- one table to track the kinds of animals in the collection --
 -- another table to track the specifics on each animal --------
-
 -- create databse: zoo --
 CREATE DATABASE zoo;
 
@@ -46,6 +47,7 @@ CREATE TABLE animal_collections (
 	kind varchar(50),
 	population numeric
 );
+
 
 -- insert into animal_collections --
 INSERT INTO animal_collections (kind, population)
@@ -66,6 +68,7 @@ CREATE TABLE animals (
 	dob date,
 	doa date
 );
+
 
 -- insert into animals
 INSERT INTO ANIMALS (name, sex, kind, mass, diet, dob, doa)
